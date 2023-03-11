@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>SurveyForm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1 id="title"><u>Survey Form - The Most Basic Survey Ever</u></h1>
+    <p id="description">Hi, welcome. This is a very basic survey, I am not sure what you're here for. However, since you're already commited, please fill it out as best as you can.</p>
+    <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+            <label for="gender">Please Select a Gender:
+                <select name="gender" id="dropdown">
+                    <option value="">(choose one...)</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Diverse</option>
+                </select>
+            </label>
+            <label id="name-label">Please Enter Your Name: <input required id="name" type="text"
+                    placeholder="enter your name..." /></label>
+            <label for="age">Please Enter Your Date of Birth: <input required type="date" name="birthday"
+                    id="age"></label>
+            <label id="email-label">Please Enter Your Email: </label><input required id="email" type="email"
+                placeholder="enter your email..." /></label>
+            <label id="number-label">Please Enter Your Phone Number: <input id="number" type="number" min="0"
+                max="100000000000" placeholder="enter your phone number..." /></label>
+        </fieldset>
+        <fieldset>
+            <label for="newsletter">Do you want to describe to our newsletter?
+                <label for="yes"><input type="radio" name="yes-no" id="yes" checked value="yes" class="inline
+                    ">Yes</label>
+                <label for="no"></label><input type="radio" name="yes-no" id="no" value="no" class="inline">No</label>
+                <label for="?"></label><input type="radio" name="yes-no" id="?" value="wtf" class="inline">What newsletter...</label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="checkbox"> Please select <b>at least one</b> topic you are interested in:
+                <label for="sports"><input class="inline" type="checkbox" name="sports" id="sports" value="1"> Sports</label>
+                <label for="reading"><input class="inline" type="checkbox" name="reading" id="reading" value="2"> Reading</label>
+                <label for="cooking"><input class="inline" type="checkbox" name="cooking" id="cooking" value="3"> Cooking</label>
+                <label for="movies"><input class="inline" type="checkbox" name="movies" id="movies" value="4"> Movies</label>
+                <label for="music"><input class="inline" type="checkbox" name="music" id="music" value="5"> Music</label>
+                <label for="other"><input class="inline" type="checkbox" name="other" id="other" value="6"> Other <input type="text" placeholder="Please specify..." id="other"></label>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="textarea">Please leave any additional comments in the text field below.<textarea id="textarea"
+                    placeholder="Your thoughts here..." rows="5" cols="40"></textarea></label>
+        </fieldset>
+        <input for="survey-form" type="submit" value="Submit" id="submit">
+    </form>
+</body>
+<footer>
+    <p>Thank you for your participation! If you have any questions please leave them <a href="https://www.google.com">here</a>.</p>
+</footer>
+
+</html>
