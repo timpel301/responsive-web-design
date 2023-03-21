@@ -1,0 +1,73 @@
+/* Styles for the main content area */
+#main-doc {
+    margin-left: 300px;
+    /* to make room for the navbar on desktop */
+}
+
+.main-section {
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.main-section h2 {
+    margin-top: 0;
+}
+
+.main-section p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.main-section code {
+    font-family: monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+}
+
+.main-section li {
+    margin-bottom: 10px;
+}
+
+/* Styles for the navbar */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ccc;
+}
+
+#navbar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 20px;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #main-doc {
+        margin-left: 0;
+    }
+
+    #navbar {
+        position: static;
+        width: 100%;
+        border-right: none;
+    }
+}
